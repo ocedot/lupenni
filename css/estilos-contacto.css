@@ -1,0 +1,81 @@
+.div-container-contacto-section{
+    width: 100%; position: relative;display: flex; justify-content: center;
+}
+
+.div-izquierda-contacto-section{
+    background-color: white;
+    width: 40%; margin-left: 5%; 
+}
+
+.div-derecha-contacto-section{
+    width: 50%; margin-right: 5%; background-color: white;
+}
+
+.h1-contacto-section{
+    font-family: 'Trade Gothic 20 Condensed';
+    background-color: white; padding: 0 5%; color: var(--violeta); font-size: 10vw; width: max-content;transform: translate(-7vw, 0vw); margin-top: 8vw; 
+}
+
+.p-contacto-section{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 3vw;
+}
+
+.a-contacto-section{
+    font-family: 'Trade Gothic 20 Condensed';
+    text-decoration: none;
+    color: var(--azul);
+    transition: all 0.3s;
+}
+
+.a-contacto-section:hover{
+    color: var(--violeta);
+    transition: all 0.3s;            
+}
+
+.separador{
+    border-top: 20vh solid white;
+    border-bottom: 20vh solid white;
+    height: 3px; margin: 0vh 5% 0vh 5%; background-color: var(--azul); 
+}
+
+@media screen and (max-width: 950px) {
+
+    .div-container-contacto-section{
+        width: 100% !important; 
+        position: relative !important;
+        display: block !important; 
+    }
+
+    .div-izquierda-contacto-section{
+        width: 100% !important; 
+        margin-left: 0% !important; 
+    }
+
+    .div-derecha-contacto-section{
+        width: 100% !important; 
+        margin-right: 0% !important; 
+    }
+
+    .p-contacto-section{
+        font-size: 5vw !important;
+    }
+
+    .separador{
+        border-top: 10vh solid white;
+        border-bottom: 10vh solid white;
+    }
+
+    .h1-contacto-section{
+        background-color: white; 
+        padding: 0 5%; 
+        color: #000 !important; 
+        font-size: 8vw; 
+        text-align: center;
+        width: 90% !important;
+        transform: translate(0vw, -20vw) !important; 
+        margin-top: 0vw !important; 
+        mix-blend-mode: screen;
+    }
+
+}

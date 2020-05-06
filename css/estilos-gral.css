@@ -1,0 +1,565 @@
+body{
+    /* overflow-x: hidden; */
+    margin: 0;
+}
+:root {
+    --violeta: #b05cab;
+    --azul: #056b87;
+    --violeta-rgba: rgba(176,92,171,0.4);
+    --azul-rgba: rgba(5,107,135,0.4);
+    --gris: #333;
+    --intermedio-feature: rgba(114,98,158,0.5);
+    --azul-feature: rgba(61,102,147,0.5);
+    --violeta-feature: rgba(169,93,170,0.5);
+}
+
+h1{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+h4{
+    margin: 0;
+}
+
+.lupenni-logo{
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    width: 170px;
+    transform: translateX(-85px);
+    z-index: 1;
+}
+
+.center-flex{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.invert{
+    mix-blend-mode: difference;
+}
+
+/* CONTACTO----------------------------------- */
+.contacto{
+    background-color: var(--gris);
+    color: white;
+    padding: 100px 5vw 100px 5vw;
+}
+.contacto-container{
+    height: 80vh;
+    width: 100%;
+    background-color: var(--gris);
+    position: relative;
+}
+
+.contacto-h1{
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 12vw;
+}
+.btn-enviar-contacto{
+    background-color: white;
+    color: var(--violeta);
+    height: 4vw;
+    font-family: 'Trade Gothic 18 Condensed';
+    padding: 0px 3vw;
+    font-size: 2vw;
+    border: none;
+    text-decoration: none;
+    animation: white-back 0.3s;
+    animation-fill-mode: forwards;
+}
+.btn-enviar-contacto:hover{
+    animation: violeta-back 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes violeta-back {
+    0% {
+        background-color: white;
+        color: var(--violeta);
+    }
+    100% {    
+        background-color: var(--violeta);
+        color: white;
+    }
+}
+
+@keyframes white-back {
+    0% {    
+        background-color: var(--violeta);
+        color: white;
+    }
+    100% {
+        background-color: white;
+        color: var(--violeta);
+    }
+}
+
+.contacto-center{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contacto-center-btn{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-btn-div{
+    position: absolute !important; 
+    top: 530px !important; 
+    left: 0px; 
+    margin: 50px 0px 24px 0px !important;
+    width: 25vw;
+}
+
+.contacto-info-div{
+    position: absolute !important; 
+    top: 530px !important; 
+    margin: 50px 0px 24px 0px !important;
+    right: 0vw; 
+    width: 60vw;
+
+}
+
+.contacto-info{
+    margin: 0px 0px 0px 40px; 
+    float: right; 
+    height: 25px;
+    padding:0px 20px;
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 40px !important;
+    animation: violeta-margin 0.3s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+.contacto-info:hover{
+    animation: azul-margin 0.3s !important;
+    animation-fill-mode: forwards !important;
+}
+
+
+@keyframes azul-margin {
+    0% {
+        border-bottom: 25px solid var(--violeta); 
+    }
+    100% {    
+        border-bottom: 25px solid var(--azul); 
+    }
+}
+
+@keyframes violeta-margin {
+    0% {    
+        border-bottom: 25px solid var(--azul); 
+    }
+    100% {
+        border-bottom: 25px solid var(--violeta); 
+    }
+}
+
+.contacto-nombre{
+    position: absolute !important; 
+    top: 0px; 
+    left: 0px; 
+    width: 45%;  
+    margin: 50px 0px 24px 0px !important;
+}
+
+.contacto-email{
+    position: absolute !important; 
+    top: 0px; 
+    left: 55%; 
+    margin: 50px 0px 24px 0px !important;
+    width: 45%;  
+}
+
+.contacto-asunto{
+    position: absolute !important; 
+    top: 200px; 
+    left: 0px; 
+    margin: 50px 0px 24px 0px !important;
+    width: 45%;  
+}
+
+.contacto-telefono{
+    position: absolute !important; 
+    top: 200px; 
+    left: 55%; 
+    margin: 50px 0px 24px 0px !important;
+    width: 45%;  
+}
+
+.contacto-mensaje{
+    position: absolute !important; 
+    top: 400px; 
+    margin: 50px 0px 24px 0px !important;
+    left: 0px; 
+    width: 100%;  
+}
+
+/* CONTACTO----------------------------------- */
+
+/* FRASE DESPUES DE CONTACTO */
+.frase-contacto{
+    color: white;
+    height: 500px;
+    width: 100%;
+    background-image: url('../img/frase-after-contacto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.back-frase-after-contacto{
+    height: 500px;
+    float: right;
+}
+
+.btn-frase{
+    background-color: white;
+    color: var(--violeta);
+    height: 4vw;
+    font-family: 'Trade Gothic 18 Condensed';
+    padding: 0px 3vw;
+    font-size: 2vw;
+    border: none;
+    text-decoration: none;
+    animation: white-back 0.3s;
+    animation-fill-mode: forwards;
+}
+.btn-frase:hover{
+    animation: violeta-back 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+.frase-after-contacto{
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 50px !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+.h2-frase-after-contacto{
+    margin-bottom: 30px !important;
+}
+/* FRASE DESPUES DE CONTACTO */
+
+/* FOTTER----------------------------------------------- */
+
+.footer{
+    color: white;
+    height: 300px;
+    width: 100%;
+    background: var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-h2{
+    text-align: center;
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 20px !important;
+}
+
+.footer-a{
+    text-align: center;
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 20px !important;
+    text-decoration: none;
+    color: white;
+    border-bottom: 0px solid white;
+    transition: all 0.3s;
+}
+.footer-a:hover{
+    border-bottom: 2px solid white;
+    transition: all 0.3s;
+}
+/* FOTTER----------------------------------------------- */
+
+@media screen and (max-width: 950px) {
+
+     /* CONTACTO------------------------------------- */
+
+    .contacto-container{
+        height: 800px;
+        width: 100%;
+        background-color: var(--gris);
+        position: relative;
+    }
+
+     .btn-enviar-contacto{
+        height: 8vw;
+        font-size: 4vw;
+        width: 100% !important;
+    }
+
+     .contacto-nombre{
+        width: 100% !important;  
+    }
+
+    .contacto-email{
+        top: 120px !important; 
+        left:0% !important; 
+        width: 100% !important;  
+    }
+
+    .contacto-asunto{
+        top: 240px !important; 
+        left: 0px !important; 
+        width: 100% !important;  
+    }
+
+    .contacto-telefono{
+        top: 360px !important; 
+        left: 0% !important; 
+        width: 100% !important;  
+    }
+
+    .contacto-mensaje{
+        top: 480px; 
+    }
+    .contacto-info{
+        float: right !important; 
+        height: 15px !important;
+        padding:0px 5% !important;
+        color: white !important;
+        font-family: 'Trade Gothic 20 Condensed';
+        font-size: 30px !important;
+        animation: violeta-margin 0.3s !important;
+        animation-fill-mode: forwards !important;
+        text-decoration: none !important;
+        margin-top: 10px;
+    }
+
+    .contacto-btn-div{
+        position: absolute !important; 
+        top: 600px !important; 
+        left: 0px; 
+        margin: 50px 0px 24px 0px !important;
+        width: 100%;
+    }
+
+
+    .contacto-info-div{
+        position: absolute !important; 
+        top: calc(670px + 10vw) !important; 
+        height: 10vw;
+        right: 0vw; 
+        margin: 0px !important;
+        width: 100%;
+    }
+    .frase-contacto{
+        color: white;
+        height: 40vh;
+        width: 100%;
+        background-image: url('../img/frase-after-contacto.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .frase-after-contacto{
+        font-size: 8vw !important;
+    }
+
+    .btn-frase{
+        background-color: white;
+        color: var(--violeta);
+        height: 8vw;
+        padding: 0px 4vw;
+        font-size: 4vw;
+    }
+
+    .nav-icon {
+        top: 50px !important;
+        right: 10% !important;
+    }
+    .lupenni-logo{
+        top: 50px !important;
+    }
+
+
+
+
+    /* --------GALERIA-CONTACTO--------------------------------- */
+    .h1-info-cont-gal{
+        font-size: 18vw !important; 
+        line-height: 18vw !important;
+    }
+    .p-info-cont-gal{
+        font-size: 6vw !important; 
+    }
+
+    .gris-header-div{         
+        z-index: -20 !important;
+    }
+    
+    .blanco-header-div{ 
+        z-index: -20 !important;
+    }
+    
+    .container-info-header-div{
+        height: calc(100% - 200px) !important; 
+        width: 80% !important;  
+        left: 0px !important; 
+        top: 0px !important; 
+        padding: 100px 10%;
+        border-bottom: 100px solid white !important;
+    }
+
+}
+
+@keyframes corazon {
+    0% {
+        width: 90%;
+    }
+    10%{
+        width: 93%;
+    }
+    20%{
+        width: 87%;
+    }
+    30%{
+        width: 95%;
+    }
+    50%{
+        width: 90%;
+    }
+    100% {    
+        width: 90%;
+    }
+}
+@keyframes corazon-w {
+    0% {
+        height: 70%;
+    }
+    10%{
+        height: 73%;
+    }
+    20%{
+        height: 67%;
+    }
+    30%{
+        height: 75%;
+    }
+    50%{
+        height: 70%;
+    }
+    100% {    
+        height: 70%;
+    }
+}
+
+@keyframes corazon-pace {
+    0% {
+        width: 10vw;
+        filter:drop-shadow(0px 0px 3px #606060);
+    }
+    10%{
+        width: 12vw;
+        filter:drop-shadow(0px 0px 10px #606060);
+    }
+    20%{
+        width: 8vw;
+        filter:drop-shadow(0px 0px 3px #606060);
+    }
+    30%{
+        width: 12vw;
+        filter:drop-shadow(0px 0px 10px #606060);
+    }
+    50%{
+        width: 10vw;
+        filter:drop-shadow(0px 0px 3px #606060);
+    }
+    100% { 
+        width: 10vw;
+        filter:drop-shadow(0px 0px 10px #606060);
+    }
+}
+
+
+
+
+
+
+.container-header-div{
+    height: 100vh; 
+    width: 100%;
+}
+
+.gris-header-div{
+    height: 80vh; 
+    width: 100%; 
+    background-color: var(--gris);
+}
+
+.blanco-header-div{
+    height: 20vh; 
+    width: 100%; 
+    background-color: white;
+}
+
+.container-info-header-div{
+    height: 75vh; 
+    width: 80%;  
+    background: url('../img/Trazado\ 68.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: absolute; 
+    left: 10%; 
+    top: 15vh; 
+}
+
+.h1-info-cont-gal{
+    width: 90%; 
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 180px; 
+    line-height: 180px;
+    margin: 5% 0px 0px 5%;
+    color: white;
+}
+.p-info-cont-gal{
+    width: 90%; 
+    font-size: 80px; 
+    margin:5%; 
+    color: white;
+    font-family: 'Trade Gothic 18 Condensed';
+}
+
+.btn-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-image: url('../img/Grupo 21@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    /* filter:drop-shadow(0px 0px 3px var(--gris)); */
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.fade-btn-up-in{
+    opacity: 1;
+    transition: all 0.5s;
+}
