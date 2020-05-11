@@ -58,7 +58,7 @@ if( isset($_POST) ) {
     if( $sendemail ) {
         echo 'OK';
     } else {
-        echo 'Could not send mail! Please check your PHP mail configuration.';
+        echo "Could not send mail! Please check your PHP mail configuration. $name --------- $email -------------- $subject -------------- $message -------------";
     }
 }
 ?>
