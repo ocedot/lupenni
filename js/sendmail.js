@@ -13,6 +13,8 @@ function sendmail() {
         mensaje: mensaje
     };
 
+    alert(str);
+
     $.ajax({
         type: "POST",
         url: "../php/mailer.php",
