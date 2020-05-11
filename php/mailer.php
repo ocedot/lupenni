@@ -11,30 +11,25 @@ require 'vendor/autoload.php';
 /* Create a new PHPMailer object. Passing TRUE to the constructor enables exceptions. */
 $mail = new PHPMailer(TRUE);
 
-/* Open the try/catch block. */
-try {
-   /* Set the mail sender. */
-   $mail->setFrom('info@lupenni.com', 'Darth Vader');
+$mail->setFrom('admin@example.com');
+$mail->addAddress('rodrigo19-1_1998@hotmail.com');
+$mail->Subject = 'Message sent by PHPMailer';
+$mail->Body = 'Hello! use PHPMailer to send email using PHP';
+$mail->IsSMTP();
+$mail->SMTPSecure = 'ssl';
+$mail->Host = 'ssl://smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Port = 465;
 
-   /* Add a recipient. */
-   $mail->addAddress('rodrigo19-1_1998@hotmail.com', 'Emperor');
+//Set your existing gmail address as user name
+$mail->Username = <a href="mailto:'rodrigo19.1.1998@gmail.com">'rodrigo19.1.1998@gmail.com</a>';
 
-   /* Set the subject. */
-   $mail->Subject = 'Force';
-
-   /* Set the mail message body. */
-   $mail->Body = 'There is a great disturbance in the Force.';
-
-   /* Finally send the mail. */
-   $mail->send();
+//Set the password of your gmail address here
+$mail->Password = '19-Enero-1998';
+if(!$mail->send()) {
+  echo 'Email is not sent.';
+  echo 'Email error: ' . $mail->ErrorInfo;
+} else {
+  echo 'Email has been sent.';
 }
-catch (Exception $e)
-{
-   /* PHPMailer exception. */
-   echo $e->errorMessage();
-}
-catch (\Exception $e)
-{
-   /* PHP exception (note the backslash to select the global namespace Exception class). */
-   echo $e->getMessage();
-}
+?>
