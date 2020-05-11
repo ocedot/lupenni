@@ -1,64 +1,42 @@
 <?php
 
-/* Contact form script configuartion */
+/* Namespace alias. */
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// Enter your email, where you want to receive the messages.
-$contact_email_to = "rodrigo19-1_1998@hotmail.com";
+require './PHPMailer/Exception.php';
+require './PHPMailer/PHPMailer.php';
+require './PHPMailer/SMTP.php';
 
-// Subject prefix
-$contact_subject_prefix = "Lupenni.com: ";
+/* Create a new PHPMailer object. Passing TRUE to the constructor enables exceptions. */
+$mail = new PHPMailer(TRUE);
 
-// Name too short error text
-$contact_error_name = "Nombre demasiado corto.";
+/* Open the try/catch block. */
+try {
+   /* Set the mail sender. */
+   $mail->setFrom('info@lupenni.com', 'Lupenni Studios');
 
-// Email invalid error text
-$contact_error_email = "E-mail incorrecto.";
+   /* Add a recipient. */
+   $mail->addAddress('rodrigo19-1_1998@hotmail.com', 'Rodrigo');
 
-// Subject too short error text
-$contact_error_subject = "Asunto demasiado corto.";
+   /* Set the subject. */
+   $mail->Subject = 'Force';
 
-// Message too short error text
-$contact_error_message = "Mensaje demasiado corto.";
+   /* Set the mail message body. */
+   $mail->Body = 'There is a great disturbance in the Force.';
 
-/********** Do not edit from the below line ***********/
-
-if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-    die('Sorry Request must be Ajax POST');
+   /* Finally send the mail. */
+   $mail->send();
+}
+catch (Exception $e)
+{
+   /* PHPMailer exception. */
+   echo $e->errorMessage();
+}
+catch (\Exception $e)
+{
+   /* PHP exception (note the backslash to select the global namespace Exception class). */
+   echo $e->getMessage();
 }
 
-if( isset($_POST) ) {
-
-    $name = filter_var($_POST["nombre"], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST["mail"], FILTER_SANITIZE_EMAIL);
-    $subject = filter_var($_POST["asunto"], FILTER_SANITIZE_STRING);
-    $message = filter_var($_POST["mensaje"], FILTER_SANITIZE_STRING);
-
-    if(strlen($name)<4){
-        die($contact_error_name);
-    }
-
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        die($contact_error_email);
-    }
-
-    if(strlen($message)<3){
-        die($contact_error_subject);
-    }
-
-    if(strlen($message)<3){
-        die($contact_error_message);
-    }
-
-    $sendemail = mail($contact_email_to, $contact_subject_prefix . $subject, $message,
-         "From: Lupenni <info@lupenni.com>" . PHP_EOL
-        ."Reply-To: ".$email . PHP_EOL
-        ."X-Mailer: PHP/" . phpversion()
-    );
-
-    if( $sendemail ) {
-        echo 'OK';
-    } else {
-        echo "Could not send mail! Please check your PHP mail configuration. $name --------- $email -------------- $subject -------------- $message -------------";
-    }
-}
 ?>
