@@ -50,7 +50,7 @@ if( isset($_POST) ) {
     }
 
     $sendemail = mail($contact_email_to, $contact_subject_prefix . $subject, $message,
-         "From: ".$name." <".$email.">" . PHP_EOL
+         "From: Lupenni <info@lupenni.com>" . PHP_EOL
         ."Reply-To: ".$email . PHP_EOL
         ."X-Mailer: PHP/" . phpversion()
     );
