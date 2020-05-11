@@ -20,7 +20,7 @@ function sendmail() {
         url: "../php/mailer.php",
         data: str,
         success: function(msg){
-           // alert(msg);
+           alert(msg);
             if(msg == 'OK') {
                 alert('Mensaje enviado con exito');
             }
