@@ -12,10 +12,14 @@
 .menu-fade-in{
     animation: top-in 0.5s;
     animation-fill-mode: forwards;
+    -webkit-animation: top-in 0.5s;
+    -webkit-animation-fill-mode: forwards;
 }
 .menu-fade-out{
     animation: top-out 0.5s;
     animation-fill-mode: forwards;
+    -webkit-animation: top-out 0.5s;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .logo-menu{ 
@@ -53,12 +57,16 @@
     color: white;
     animation: border-azul 0.5s;
     animation-fill-mode: forwards;
+    -webkit-animation: border-azul 0.5s;
+    -webkit-animation-fill-mode: forwards;
     cursor: pointer;
 }
 
 .menu-item:hover{
     animation: border-violeta 0.5s;
     animation-fill-mode: forwards;
+    -webkit-animation: border-violeta 0.5s;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .insta-menu-text{
@@ -77,11 +85,15 @@
     color: white;
     animation: border-violeta 0.5s;
     animation-fill-mode: forwards;
+    -webkit-animation: border-violeta 0.5s;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .menu-item-invert:hover{
     animation: border-azul 0.5s;
     animation-fill-mode: forwards;
+    -webkit-animation: border-azul 0.5s;
+    -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes border-violeta {
@@ -100,6 +112,27 @@
     100% {top: 0%;}
 }
 @keyframes top-out {
+    0% {top: 0%;}
+    99%{top: -200%;}
+    100% {top: -1200%;}
+}
+
+@-webkit-keyframes border-violeta {
+    0% {border-bottom: 20px solid var(--azul); }
+    100% {border-bottom: 20px solid var(--violeta);}
+}
+
+@-webkit-keyframes border-azul {
+    0% {border-bottom: 20px solid var(--violeta);}
+    100% {border-bottom: 20px solid var(--azul); }
+}
+
+@-webkit-keyframes top-in {
+    0% {top: -1200%;}
+    1%{ top:-200%; }
+    100% {top: 0%;}
+}
+@-webkit-keyframes top-out {
     0% {top: 0%;}
     99%{top: -200%;}
     100% {top: -1200%;}

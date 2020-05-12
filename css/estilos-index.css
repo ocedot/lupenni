@@ -250,7 +250,6 @@
 
             .lista-nivel-item{
                 font-family: 'Trade Gothic Italic';
-                font-size: 2vw;
                 margin: 10px 0;
             }
             /* PROGRAMA----------------------------------- */
@@ -364,6 +363,7 @@
         }
         .img-before-feature{
             animation: corazon 1.5s infinite;
+            -webkit-animation: corazon 1.5s infinite;
         }
         /* MOVIL-------------------------------------- */
 
@@ -379,9 +379,11 @@
                 left: 0px !important;
                 font-size: 5vw !important;
                 text-align: center !important;
+                align-items: flex-end !important;
             }
             .img-before-feature{
                 animation: corazon-w 1.5s infinite !important;
+                -webkit-animation: corazon-w 1.5s infinite !important;
             }
             .after-header-movil-h-25-r{
                 justify-content: center !important;
@@ -391,6 +393,7 @@
                 right: 0px !important;
                 font-size: 5vw !important;
                 text-align: center !important;
+                align-items: flex-start !important;
             }
             .after-header-movil-h-50{            
                 width: 100% !important;
