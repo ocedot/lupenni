@@ -473,6 +473,7 @@ h4{
     
     .container-header-div{
         height: 60vh !important;
+        padding-bottom: 50px;
     }
 
     .container-info-header-div{
