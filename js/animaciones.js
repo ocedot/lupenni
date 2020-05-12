@@ -92,12 +92,20 @@ document.onscroll = function(){
         document.getElementById('logolupenni').classList.add('invert');
         document.getElementById('btnburger').classList.add('invert');
         document.getElementById('up').classList.add('fade-btn-up-in');
-        document.getElementById('video-index').style.display = 'none';
+        try {
+            document.getElementById('video-index').style.display = 'none';
+        } catch (error) {
+            
+        }
     }else{
         document.getElementById('logolupenni').classList.remove('invert');
         document.getElementById('btnburger').classList.remove('invert');
         document.getElementById('up').classList.remove('fade-btn-up-in');
-        document.getElementById('video-index').style.display = 'block';
+        try {
+            document.getElementById('video-index').style.display = 'block';
+        } catch (error) {
+            
+        }
         
     }
 };

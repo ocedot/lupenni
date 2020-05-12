@@ -45,16 +45,33 @@ try {
             }
         }
     };
+} catch (error) {
+    console.log(error);
+}
 
+try {
     document.getElementById('programamenu').onclick = function () {
         menu();
         var pro = programa.offsetTop;
         scrollTo(document.documentElement, pro, 1250);   
     }
     
+    
+} catch (error) {
+    console.log(error);
+}
+
+try {
+
     document.getElementById('up').onclick = function () {
         scrollTo(document.documentElement, 0, 1250);   
     }
+
+} catch (error) {
+    console.log(error);
+}
+
+try {
 
     document.getElementById('iniciomenu').onclick = function () {
         menu();
@@ -62,7 +79,7 @@ try {
         scrollTo(document.documentElement, header, 1250);   
     }    
 } catch (error) {
-    
+    console.log(error);
 }
 
     
