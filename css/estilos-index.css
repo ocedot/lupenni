@@ -129,18 +129,21 @@
             .galeria-img-1{
                 width: 35%;
                 padding-right: 5%;
-                opacity: 0;
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
             }
 
             .galeria-img-2{
                 width: 100%;
-                opacity: 0;
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
             }
 
             .galeria-img-3{   
                 padding-top: 100px;
                 width: 100%;
-                opacity: 0;
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
             }
 
             .foto2-3{
