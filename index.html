@@ -28,6 +28,16 @@
     <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
     <script src="./lib/Pace/pace.min.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167277767-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167277767-1');
+    </script>
+
 </head>
 <body onload="move()" id="bodyelement" style="background-color: #333;">
     
@@ -150,11 +160,11 @@
     <!-- GALERIA------------------------------------------------------ -->
     <div class="galeria">
         <div class="galeria-flex">
-            <img id="indexfoto1" class="galeria-img-1" src="./img/DSC_6233.png" alt="">
+            <img class="galeria-img-1" src="./img/DSC_6233.png" alt="">
             <div class="foto2-3">
-                <img id="indexfoto2" class="galeria-img-2" src="./img/DSC_2349.png" alt="">
+                <img class="galeria-img-2" src="./img/DSC_2349.png" alt="">
                 <div style="overflow-x: hidden;">
-                    <img id="indexfoto3" class="galeria-img-3" src="./img/DSC_1518.png" alt="">
+                    <img class="galeria-img-3" src="./img/DSC_1518.png" alt="">
                 </div>
             </div>
         </div>
@@ -225,7 +235,7 @@
     </section>
     
     <section>
-        <div class="contacto">
+        <div class="contacto" id="div-contacto">
             <h1 class="margin-cero contacto-h1">Contacto</h1>
 
             <div class="contacto-container">
@@ -260,7 +270,7 @@
                     </label>
                 </div>
                 <div class="contacto-btn-div">
-                    <button class="btn-enviar-contacto" onclick="contacwpp()">Enviar</button>     
+                    <button class="btn-enviar-contacto" onclick="sendmail()">Enviar</button>     
                 </div>
                 <div class="contacto-info-div">
                     <a href="mailto:hola@lupenni.com" class="contacto-info">hola@lupenni.com</a>
@@ -274,7 +284,7 @@
         <div class="frase-contacto">
             <div class="frase-after-contacto">
                 <h2 class="margin-cero h2-frase-after-contacto">¿Necesitas mas información?</h2>
-                <button class="btn-frase">Habla conmigo</button>  
+                <button class="btn-frase" id="btn-frase">Habla conmigo</button>  
             </div>
         </div>
     </section>
@@ -326,12 +336,23 @@
         </div>
     </div>
 
+
+    <div id="msj-enviado" class="constru">
+        <div class="div-1-constru">
+            <p class="p-1-constru" id="msj-msj-enviado"></p>
+        </div>
+        <div class="div-2-constru">
+            <button class="btn-frase" onclick="msjEnviado()">Cerrar</button>  
+        </div>
+    </div>
+
     <div class="btn-up" id="up"></div>
 
     <!-- <div class="test"></div> -->
 
     <script src="./js/nieveles.js "></script>
     <script src="./js/constru.js "></script>
+    <script src="./js/msj-enviado.js "></script>
     <script src="./js/animaciones.js "></script>
     <script src="./js/menu.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

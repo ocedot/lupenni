@@ -12,22 +12,23 @@ function sendmail() {
         telefono: telefono,
         mensaje: mensaje
     };
-
-    alert(str);
-
     $.ajax({
         type: "POST",
         url: "../php/mailer.php",
         data: str,
         success: function(msg){
-           alert(msg);
-            if(msg == 'OK') {
-                alert('Mensaje enviado con exito');
+            if(msg == '1') {
+                var paragraph = document.getElementById("msj-msj-enviado");
+                var text = document.createTextNode("Gracias por comunicarte conmigo, te responderé a la brevedad ♥");
+                paragraph.appendChild(text);
+                msjEnviado()
             }
             else {
-                alert('Error al enviar el mensaje');
+                var paragraph = document.getElementById("msj-msj-enviado");
+                var text = document.createTextNode("Ups! Algo salio mal😢");
+                paragraph.appendChild(text);
+                msjEnviado()
             }
-            
         }
     });
 }

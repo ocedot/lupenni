@@ -1,0 +1,40 @@
+.div-empresa{
+    position: relative; 
+    height: 200px; 
+    width: 80%; 
+    border-top: 3px solid var(--azul); 
+    background-color: white; 
+    margin-left: 10%;
+}
+.div-empresa-fin{
+    position: relative; 
+    height: 200px; 
+    width: 80%; 
+    border-top: 3px solid var(--azul); 
+    border-bottom: 3px solid var(--azul); 
+    background-color: white; 
+    margin-left: 10%;
+}
+
+.div-empresa-div-foto{
+    position: absolute; 
+    background-color: white; 
+    height: 80%; 
+    width: 40%; 
+    left: 0%; 
+    top: 10%;
+}
+
+.div-empresa-foto{
+    height: 100%; 
+    float: right;
+}
+
+.div-empresa-div-texto{
+    position: absolute; 
+    background-color: red; 
+    height: 80%; 
+    width: 45%; 
+    left: 50%; 
+    top: 10%;
+}

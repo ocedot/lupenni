@@ -20,9 +20,19 @@
     <!-- FAV ICON -->
     <link rel="icon" type="image/png" href="./img/fav.png">
     <!-- PACE -->
-    <!-- <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
-    <script src="./lib/Pace/pace.min.js"></script> -->
+    <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
+    <script src="./lib/Pace/pace.min.js"></script>
     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167277767-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167277767-1');
+    </script>
+
 
 </head>
 <body>
@@ -64,7 +74,7 @@
     <div class="separador"></div>
 
     <section>
-        <div class="contacto">
+        <div class="contacto" id="div-contacto">
             <h1 class="margin-cero contacto-h1">Escribeme</h1>
 
             <div class="contacto-container">
@@ -99,7 +109,7 @@
                     </label>
                 </div>
                 <div class="contacto-btn-div">
-                    <button class="btn-enviar-contacto">Enviar</button>     
+                    <button class="btn-enviar-contacto" onclick="sendmail()">Enviar</button>     
                 </div>
                 <div class="contacto-info-div">
                     <a href="mailto:hola@lupenni.com" class="contacto-info">hola@lupenni.com</a>
@@ -113,7 +123,7 @@
         <div class="frase-contacto">
             <div class="frase-after-contacto">
                 <h2 class="margin-cero h2-frase-after-contacto">¿Te interesa?</h2>
-                <button class="btn-frase">¡Vamos!</button>  
+                <button class="btn-frase" id="btn-frase">¡Vamos!</button>  
             </div>
         </div>
     </section>
@@ -166,11 +176,22 @@
         </div>
     </div>
 
+    <div id="msj-enviado" class="constru">
+        <div class="div-1-constru">
+            <p class="p-1-constru" id="msj-msj-enviado"></p>
+        </div>
+        <div class="div-2-constru">
+            <button class="btn-frase" onclick="msjEnviado()">Cerrar</button>  
+        </div>
+    </div>
+
     <div class="btn-up" id="up"></div>
 
     <script src="./js/menu.js "></script>
     <script src="./js/constru.js "></script>
     <script src="./js/animaciones.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/sendmail.js"></script>
 
 </body>
 </html>

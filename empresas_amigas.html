@@ -5,31 +5,35 @@
     <meta name="theme-color" content="#b05cab">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Galeria</title>
+    <title>Empresas Amigas</title>
     <link rel="stylesheet" href="./css/fuentes.css">
-    <link rel="stylesheet" href="./css/estilos-lg.css">
-    <link rel="stylesheet" href="./css/estilos-md.css">
-    <link rel="stylesheet" href="./css/estilos-sm.css">
-    <link rel="stylesheet" href="./css/estilos-xs.css">
     <link rel="stylesheet" href="./css/estilos-gral.css">
     <link rel="stylesheet" href="./css/estilos-input-contacto.css">
-    <link rel="stylesheet" href="./css/estilos-contacto.css">
     <link rel="stylesheet" href="./css/estilos-niveles.css">
-    <link rel="stylesheet" href="./css/estilos-galeria.css">
     <link rel="stylesheet" href="./css/estilos-menu.css">
-    <link rel="stylesheet" href="./css/animaciones.css">
-
+    <link rel="stylesheet" href="./css/constru.css">
+    <link rel="stylesheet" href="./css/estilos-empresas.css">
     <!-- FAV ICON -->
     <link rel="icon" type="image/png" href="./img/fav.png">
     <!-- PACE -->
     <!-- <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
     <script src="./lib/Pace/pace.min.js"></script> -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167277767-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167277767-1');
+    </script>
+
 
 </head>
 <body>
-    
-    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.png" alt="">
+
+    <img class="lupenni-logo" id="logolupenni"  src="./img/Logo@2x.png" alt="">
     <div class="nav-icon " id="btnburger" onclick="menu()">
         <div></div>
     </div>
@@ -37,14 +41,175 @@
     <section>
         <div class="container-header-div">
             <div class="gris-header-div"></div>
-            <div class="blanco-header-div"></div>
+            <div class="blanco-header-div" id="afterintro"></div>
             <div class="container-info-header-div">
-                <h1 class="h1-info-cont-gal">Contacto</h1>
+                <h1 class="h1-info-cont-gal">Empresas</h1>
                 <p class="p-info-cont-gal">Un gran salto para ti ya sea profesionalmente o por hobby. Yo ya estoy lista para comenzar esta hermosa experiencia. Hagámoslo.</p>
             </div>
         </div>
     </section>
 
+    <section style="border-bottom: 20vh solid white;">
+        <div class="div-empresa">
+            
+            <div class="div-empresa-div-foto">
+     
+                <img src="./img/DSC_-1.png" class="div-empresa-foto" alt="">
     
+            </div>
+            
+            <div class="div-empresa-div-texto">
+               <div style="position: relative; width: 100%; height: 100%; background-color: darkgoldenrod;"></div>
+    
+                <p style="position: absolute; top: 3px; margin: 0;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo incidunt dolore architecto cumque dolorem error ducimus at! Nam vitae dolore consequuntur totam ex iure voluptate animi quod sint voluptates.</p>
+                
+                <p style="position: absolute; bottom: 3px; margin: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi neque </p>
+    
+    
+            </div>
+        </div>
+    
+    
+        <div class="div-empresa-fin">
+            
+            <div style="position: absolute; background-color: darkblue; height: 80%; width: 35%; left: 5%; top: 10%;">
+     
+                <img src="./img/DSC_2029-ph-3.png" style="height: 100%; float: right;" alt="">
+    
+            </div>
+            
+            <div style="position: absolute; background-color: red; height: 80%; width: 45%; left: 50%; top: 10%;">
+               <div style="position: relative; width: 100%; height: 100%; background-color: darkgoldenrod;"></div>
+    
+                <p style="position: absolute; top: 3px; margin: 0;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo incidunt dolore architecto cumque dolorem error ducimus at! Nam vitae dolore consequuntur totam ex iure voluptate animi quod sint voluptates.</p>
+                
+                <p style="position: absolute; bottom: 3px; margin: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi neque </p>
+    
+    
+            </div>
+        </div>
+    </section>
+
+   
+    <section>
+        <div class="contacto" id="div-contacto">
+            <h1 class="margin-cero contacto-h1">Escribeme</h1>
+
+            <div class="contacto-container">
+                <div class="omrs-input-group contacto-nombre">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Nombre</span>
+                    </label>
+                </div>
+                <div class="omrs-input-group contacto-email">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">E-mail</span>
+                    </label>
+                </div>
+                <div class="omrs-input-group contacto-asunto">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Asunto</span>
+                    </label>
+                </div>
+                <div class="omrs-input-group contacto-telefono">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Telefono</span>
+                    </label>
+                </div>
+                <div class="omrs-input-group contacto-mensaje">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Mensaje</span>
+                    </label>
+                </div>
+                <div class="contacto-btn-div">
+                    <button class="btn-enviar-contacto" onclick="sendmail()">Enviar</button>     
+                </div>
+                <div class="contacto-info-div">
+                    <a href="mailto:hola@lupenni.com" class="contacto-info">hola@lupenni.com</a>
+                    <a href="tel:+59894092463" class="contacto-info">094 092 463</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="frase-contacto">
+            <div class="frase-after-contacto">
+                <h2 class="margin-cero h2-frase-after-contacto">¿Te interesa?</h2>
+                <button class="btn-frase" id="btn-frase">¡Vamos!</button>  
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="footer">
+            <h2 class="margin-cero footer-h2">Lupenni 2020 © Todos los derechos reservados. <br>
+                <a class="footer-a" href="https://instagram.com/ocedot_studios"> Designed by OCEDOT</a>
+        </div>
+    </section>
+
+
+
+    <div id="menu" class="menu">
+        <div class="menu-foto"></div>
+        <div class="menu-items">
+            <div class="menu-items-div">
+                <div style="height: 5%;">
+                    <img src="./img/Logo.png" class="logo-menu" alt=""><br>
+                </div>
+                <div style="height: 85%; padding-top: 10%;">
+                    <div style="height: 70%;">
+                        <a href="index.html" class="menu-item">Inicio</a><br>
+                        <a id="programamenu" class="menu-item">Programa</a><br>
+                        <a href="contacto.html" class="menu-item">Contacto</a><br>
+                        <a href="galeria.html" class="menu-item">Galeria</a><br>
+                        <a onclick="constru()" class="menu-item">Empresas amigas</a><br>
+                    </div>
+                    <div style="height: 30%;">
+                        <a href="tel:+59894092463" class="menu-item-invert">094 092 463</a><br>
+                        <a href="mailto:hola@lupenni.com" class="menu-item-invert">hola@lupenni.com</a><br>
+                        <div class="insta-menu-div" onmouseover="instamenuazul()" onmouseout="instamenu()"> 
+                            <div class="insta-menu-img" id="divmenuinsta"></div>
+                            <a class="insta-menu-text" href="http://instagram.com/lupenni.studio">Lupenni.studio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="constru" class="constru">
+        <div class="div-1-constru">
+            <p class="p-1-constru">Este sitio aun se encuentra en construccion, disculpe las molestias causadas.</p>
+        </div>
+        <div class="div-2-constru">
+            <button class="btn-frase" onclick="constru()">Cerrar</button>  
+        </div>
+    </div>
+
+    <div id="msj-enviado" class="constru">
+        <div class="div-1-constru">
+            <p class="p-1-constru" id="msj-msj-enviado"></p>
+        </div>
+        <div class="div-2-constru">
+            <button class="btn-frase" onclick="msjEnviado()">Cerrar</button>  
+        </div>
+    </div>
+
+    <div class="btn-up" id="up"></div>
+
+    <script src="./js/menu.js "></script>
+    <script src="./js/constru.js "></script>
+    <script src="./js/animaciones.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/sendmail.js"></script>
+
 </body>
 </html>

@@ -302,7 +302,7 @@ h4{
     }
 
      .btn-enviar-contacto{
-        height: 8vw;
+        height: 12vw;
         font-size: 4vw;
         width: 100% !important;
     }
@@ -381,8 +381,8 @@ h4{
     .btn-frase{
         background-color: white;
         color: var(--violeta);
-        height: 8vw;
-        padding: 0px 4vw;
+        height: 12vw;
+        padding: 0px 8vw;
         font-size: 4vw;
     }
 
@@ -537,7 +537,7 @@ h4{
 }
 .p-info-cont-gal{
     width: 90%; 
-    font-size: 80px; 
+    font-size: 60px; 
     margin:5%; 
     color: white;
     font-family: 'Trade Gothic 18 Condensed';

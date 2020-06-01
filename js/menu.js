@@ -56,6 +56,11 @@ try {
         scrollTo(document.documentElement, 0, 1250);   
     }
 
+    document.getElementById('btn-frase').onclick = function () {
+        var contacto = document.getElementById('div-contacto').offsetTop;
+        scrollTo(document.documentElement, contacto, 1250);   
+    }
+
     document.getElementById('iniciomenu').onclick = function () {
         menu();
         var header = document.getElementById('header').offsetTop;
