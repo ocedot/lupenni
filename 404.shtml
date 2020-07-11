@@ -23,7 +23,7 @@
     </div>
 
     <div style="background-color:#333; display: flex; justify-content: center; align-items: center; padding: 45vh 0 0 0 ; height: 10vh;">
-        <h1 style="font-size: 100px; text-align: center; font-family: 'Trade Gothic 20 Condensed'; color: white;">Error 404 - Estas boyando botija</h1>
+        <h1 style="font-size: 100px; text-align: center; font-family: 'Trade Gothic 20 Condensed'; color: white;">no pudimos encontrar la pagina que buscas😢</h1>
     </div>
     <div style="background-color:#333; display: flex; justify-content: center; align-items: center; padding: 5vh 0 0 0 ; height: 10vh;">
         <a href="./index.html" class="btn-frase" style="text-align: center; display: flex; align-items: center;">Ir al inicio</a>

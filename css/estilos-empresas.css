@@ -6,6 +6,17 @@
     background-color: white; 
     margin-left: 10%;
 }
+
+.div-empresa-pri{
+    position: relative; 
+    height: 200px; 
+    width: 80%; 
+    border-top: 3px solid var(--azul); 
+    background-color: white; 
+    margin-left: 10%;
+}
+
+
 .div-empresa-fin{
     position: relative; 
     height: 200px; 
@@ -16,6 +27,18 @@
     margin-left: 10%;
 }
 
+
+.div-empresa-foto{
+    height: 100%; 
+    max-width: 100%;
+}
+
+.foto-empresa-especial{
+
+    width: 100%;
+    height: auto;
+}
+
 .div-empresa-div-foto{
     position: absolute; 
     background-color: white; 
@@ -23,19 +46,93 @@
     width: 40%; 
     left: 0%; 
     top: 10%;
-}
-
-.div-empresa-foto{
-    height: 100%; 
-    max-width: 100%;
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .div-empresa-div-texto{
     position: absolute; 
-    background-color: red; 
+    background-color: white; 
     height: 80%; 
     width: 45%; 
     left: 50%; 
     top: 10%;
+}
+
+
+.titulo-div-empresa{
+    position: absolute; 
+    top: 0px;
+    margin: 0;
+    font-family: 'Trade Gothic 20 Condensed';  
+    font-weight: 600; 
+    font-size: 30px; 
+    border-bottom: 1px solid var(--violeta);
+}
+
+.descripcion-div-empresa{
+    position: absolute; 
+    top: 45px;
+    margin: 0;
+    font-family: 'Trade Gothic 18 Condensed'; 
+    font-size: 25px;
+}
+
+.pie-div-empresa{
+    position: absolute; 
+    bottom: 0px;
+    margin: 0;
+    font-family: 'Trade Gothic Italic'; 
+    font-size: 20px;
+    color: #555;
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .empresas{
+        margin-top: 50px;
+    }
+
+    .div-empresa-pri{
+        border-top: 3px solid white !important; 
+        height: 400px !important; 
+    }
+    .div-empresa{
+        height: 400px !important; 
+    }
+    
+    .div-empresa-fin{
+        height: 400px !important; 
+    }
+
+
+    .div-empresa-div-foto{
+        height: 40% !important; 
+        width: 100% !important; 
+        left: 0% !important; 
+        top: 5% !important;
+        justify-content: center !important;
+
+    }
+    
+    .div-empresa-div-texto{
+        height: 40% !important; 
+        width: 100% !important; 
+        left: 0% !important; 
+        top: 55% !important;
+    }
+
+    .titulo-div-empresa{
+        font-size: 20px !important; 
+    }
+    
+    .descripcion-div-empresa{
+        font-size: 15px !important;
+    }
+    
+    .pie-div-empresa{
+        font-size: 10px !important;
+    }
 }
